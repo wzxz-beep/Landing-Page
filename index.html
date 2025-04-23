@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Willian Dos Santos Silva</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #0044cc;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #003399;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #0044cc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Olá, eu sou Willian </h1>
+  <p>Desenvolvedor(a) em formação — veja mais sobre mim!</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sou aluno de Ciência da Computação na Uvv,anteriotmente cursei Letras e Literatura Inglesa na Ufes</a>
+  <a href="#curriculo">Cursei em Letras - Inglês pela Universidade Federal do Espírito Santo (UFES), possui fluência em inglês e experiência sólida na área de comunicação e atendimento bilíngue. Atua atualmente na Coca-Cola, onde desenvolve atividades que envolvem interação com clientes e parceiros internacionais, além de contribuir com a tradução e adaptação de materiais. Destaca-se pela facilidade de comunicação, proatividade e capacidade de trabalhar em equipe.</a>
+  <a href="#github">https://github.com/wzxz-beep</a>
+  <a href="#servicos">Atualmenhte trabalho na Coca Cola Andina no setor Administrativo desde Janeiro </a>
+  <a href="#contato">27 99923199</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <img src="foto.jpg" alt="Minha foto">
+  <p><strong>Resumo:</strong> Estudante dedicado(a) com foco em desenvolvimento web. Gosto de aprender e aplicar novas tecnologias.</p>
+  <p><strong>Hobbies:</strong> Jogos, música, assistir vídeos de Rpg.</p>
+  <p><strong>Histórico Acadêmico:</strong> Ensino médio completo, atualmente cursando Ciência da Computação na UVV.</p>
+  <p><strong>Eventos Participados:</strong> Semana de tecnologia,.</p>
+  <p><strong>Matérias favoritas:</strong> Fundamentos de Tecnologia da Computação.</p>
+  <p><strong>Planos Futuros:</strong> Trabalhar como desenvolvedor Full Stack e atuar com projetos inovadores.</p>
+</section>
+
+<section id="curriculo">
+  <h2>Currículo</h2>
+  <p>Ainda sem experiências profissionais formais, mas desenvolvi projetos pessoais como sites institucionais e portfólios.</p>
+  <ul>
+    <li>HTML, CSS e JS</li>
+    <li>Git e GitHub</li>
+    <li>Figma (básico)</li>
+  </ul>
+</section>
+
+<section id="github">
+  <h2>Meu GitHub</h2>
+  <p>Veja meus projetos e contribuições no GitHub:</p>
+  <a href="https://github.com/wzxz-beep" target="_blank">
+    <img src="github-logo.png" alt="GitHub Logo">
+  </a>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <p>Confira os serviços que ofereço e seus respectivos preços:</p>
+  <table>
+    <tr>
+      <th>Tipo de Página</th>
+      <th>Descrição</th>
+      <th>Preço</th>
+    </tr>
+    <tr>
+      <td>Estática</td>
+      <td>HTML e CSS simples (1 a 2 páginas)</td>
+      <td>R$100,00</td>
+    </tr>
+    <tr>
+      <td>Dinâmica</td>
+      <td>Com interações básicas em JS (3 a 5 páginas)</td>
+      <td>R$200,00</td>
+    </tr>
+    <tr>
+      <td>Avançada</td>
+      <td>Site com backend ou dashboard (mais de 5 páginas)</td>
+      <td>R$350,00</td>
+    </tr>
+  </table>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <form>
+    <label>Nome completo:</label>
+    <input type="text" name= "name" required>
+
+    <label>Telefone:</label>
+    <input type="tel" name="number" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Você é:</label>
+    <select name="pessoa">
+      <option value="fisica">Pessoa Física</option>
+      <option value="juridica">Pessoa Jurídica</option>
+    </select>
+
+    <label>Melhor horário para contato:</label>
+    <input type="text" name="horário">
+
+    <label>Tipo de serviço desejado:</label>
+    <select name="tipo">
+      <option value="estatica">Página Estática</option>
+      <option value="dinamica">Página Dinâmica</option>
+      <option value="avancada">Página Avançada</option>
+    </select>
+
+    <label>Descrição do projeto:</label>
+    <textarea name="descricao" rows="5"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+</body>
+</html>
